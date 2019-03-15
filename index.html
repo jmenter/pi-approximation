@@ -9,7 +9,7 @@
     <p>Random points are placed. If they would land inside the circle because sqrt(x&sup2; + y&sup2;)
         &lt; r, they're red. &pi; approximation is inside count &divide; (total count &times; 4).</p>
     <div>diameter: <input type="text" value="400" id="diameter" onblur="resetCanvas()">
-        <button onclick="goClick()" id="button">begin</button>
+        <button onclick="goWasClicked()" id="button">begin</button>
         <span id="results"> pi approximation:</span>
     </div>
     <canvas id="sandbox"></canvas>
