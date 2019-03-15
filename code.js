@@ -44,7 +44,7 @@ function draw() {
 
     document.getElementById("results").innerText =
         " pi approximation: " + (innerCount / totalCount * 4);
-    window.requestAnimationFrame(isDrawing ? draw : null);
+    isDrawing ? window.requestAnimationFrame(draw) : null;
 }
 
 function randomPoints(count) {
