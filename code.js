@@ -43,7 +43,7 @@ function draw() {
     totalCount += POINTS_TO_ADD;
 
     document.getElementById("results").innerText =
-        " pi approximation: " + (innerCount / totalCount * 4) + " using " + totalCount + " dots";
+        " pi approximation: " + (innerCount / totalCount * 4);
     window.requestAnimationFrame(isDrawing ? draw : null);
 }
 
